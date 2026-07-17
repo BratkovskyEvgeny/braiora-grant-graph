@@ -1,14 +1,39 @@
-# OP Atlas — what to fill in
+# OP Atlas — регистрация Braiora Grant Graph
 
-Site: https://atlas.optimism.io/  
-Track: Dev Tooling (not Onchain Builders).
+Сайт: https://atlas.optimism.io/  
+Трек: **Dev Tooling** (не Onchain Builders).
 
-**Name:** Braiora Grant Graph  
+## Уже готово
 
-**One line:** Open grant data + a small scoring library for builders.  
+- GitHub: https://github.com/BratkovskyEvgeny/braiora-grant-graph  
+- npm: https://www.npmjs.com/package/braiora-grants (`braiora-grants@0.1.0`)  
+- License: MIT  
+- Сайт: https://braiora.com  
 
-**Longer text (paste and tweak):**
+## Что нажать на сайте
 
+1. Открой https://atlas.optimism.io/  
+2. **Connect wallet** (тот, которым будешь владеть проектом)  
+3. Sign / подтверди вход  
+4. **Add project** / Create project  
+5. Подключи **GitHub** (аккаунт `BratkovskyEvgeny`) и верифицируй репо `braiora-grant-graph`  
+6. Заполни поля текстом ниже  
+7. Укажи npm: `braiora-grants`  
+8. Сохрани. Если есть enroll в Retro Dev Tooling — включи, когда Atlas это предложит  
+
+## Текст для полей
+
+**Name**
+```text
+Braiora Grant Graph
+```
+
+**One-liner**
+```text
+Open grant data + a small scoring library for builders.
+```
+
+**Description**
 ```text
 Braiora Grant Graph collects public grant/award data (starting with Optimism
 Retro Funding results) and ships a small npm package, braiora-grants, with
@@ -22,15 +47,13 @@ want to score a tooling project against Retro-style programs.
 **Links**
 
 - Website: https://braiora.com  
-- GitHub: *(your public repo)*  
-- npm: braiora-grants *(after publish)*  
+- GitHub: https://github.com/BratkovskyEvgeny/braiora-grant-graph  
+- npm: https://www.npmjs.com/package/braiora-grants  
 - License: MIT  
 
-**Before you apply**
+## После регистрации
 
-1. Repo is public  
-2. Package is on npm  
-3. At least a couple of repos import it  
-4. GitHub ownership verified in Atlas  
+Нужны реальные импорты пакета (лучше 3 чужих/своих отдельных репо на Superchain).  
+Шаблоны сообщений: `docs/OUTREACH.md`.
 
-Don’t claim we’re a DeFi protocol or that Agora feeds our pipeline.
+Не пиши, что это DeFi-протокол или что данные идут из Agora.

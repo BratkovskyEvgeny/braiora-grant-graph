@@ -1,37 +1,31 @@
 # Braiora Grant Graph — notes
 
 Product under [braiora.com](https://braiora.com).  
-npm package: `braiora-grants`.
+npm: [braiora-grants](https://www.npmjs.com/package/braiora-grants)  
+repo: https://github.com/BratkovskyEvgeny/braiora-grant-graph  
 
-Aim: get into Optimism Retro (Dev Tooling) with something people actually import, not a landing page.
+Aim: Optimism Retro (Dev Tooling) with a package people actually import.
 
 ## Stack
 
 - TypeScript monorepo  
 - DuckDB on the laptop  
 - Postgres later only if we host a real multi-user API  
-- VPS (Selectel etc.) when cron/API need to stay up
 
 ## Data
 
 - Optimism awards: Retro-Funding GitHub JSON  
 - Agora: skip  
 
-## Order of ecosystems
-
-1. Optimism Retro Dev Tooling  
-2. Solana public goods  
-3. EF ESP when the dataset looks serious enough  
-
 ## Checklist
 
-- [x] public-ish repo layout, MIT  
+- [x] public repo + MIT  
 - [x] Optimism collector + JSONL releases  
-- [x] `braiora-grants` package builds  
-- [ ] push to GitHub  
-- [ ] `npm publish`  
-- [ ] 3 projects that import the package  
-- [ ] OP Atlas (see docs/ATLAS.md)  
+- [x] GitHub: BratkovskyEvgeny/braiora-grant-graph  
+- [x] npm: braiora-grants@0.1.0  
+- [ ] OP Atlas project + GitHub verify (`docs/ATLAS.md`)  
+- [ ] 3 projects that import `braiora-grants`  
+- [ ] enroll / stay eligible for Retro Dev Tooling metrics  
 
 ## Don’t bother with (for now)
 

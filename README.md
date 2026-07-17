@@ -2,10 +2,11 @@
 
 Tools for looking at ecosystem grants without the usual spreadsheet mess.
 
-Brand: [braiora.com](https://braiora.com)  
-npm: `braiora-grants`
+- Brand: [braiora.com](https://braiora.com)  
+- npm: [braiora-grants](https://www.npmjs.com/package/braiora-grants)  
+- GitHub: [BratkovskyEvgeny/braiora-grant-graph](https://github.com/BratkovskyEvgeny/braiora-grant-graph)  
 
-We pull Optimism Retro payouts from the public [Retro-Funding](https://github.com/ethereum-optimism/Retro-Funding) JSON. No Agora API.
+Optimism Retro payouts come from public [Retro-Funding](https://github.com/ethereum-optimism/Retro-Funding) JSON. No Agora API.
 
 ## Use the library
 
@@ -15,8 +16,9 @@ npm i braiora-grants zod
 
 ```js
 import { scoreOpportunityFit } from "braiora-grants";
-// see packages/braiora-grants/README.md
 ```
+
+See `packages/braiora-grants/README.md`.
 
 From this repo:
 
@@ -25,31 +27,28 @@ pnpm install
 pnpm example:integrator
 ```
 
-## Run the collectors
+## Collectors
 
 ```bash
-pnpm collect:optimism   # writes DuckDB + data/raw/optimism
-pnpm export:release     # JSONL under data/releases/YYYY-MM-DD
-pnpm api:dev            # localhost:8787
+pnpm collect:optimism
+pnpm export:release
+pnpm api:dev
 ```
-
-Optional: `OGG_OP_TOP_N=50 pnpm collect:optimism` if you only want the top payouts per snapshot.
 
 ## Layout
 
 ```text
-packages/braiora-grants/   npm package (schema + score)
+packages/braiora-grants/   published npm package
 packages/schema|score|sdk|collectors|api/
 data/releases/
-docs/ATLAS.md              text for OP Atlas
-docs/OUTREACH.md           messages for design partners
+docs/ATLAS.md
+docs/OUTREACH.md
 ```
 
-## Publish
+## Next
 
-1. Put the code on a public GitHub repo  
-2. Fix `repository.url` in `packages/braiora-grants/package.json` if needed  
-3. `pnpm --filter braiora-grants publish --access public`
+1. Register on [OP Atlas](https://atlas.optimism.io/) — copy from `docs/ATLAS.md`  
+2. Get a few projects importing `braiora-grants` — `docs/OUTREACH.md`  
 
 ## License
 
