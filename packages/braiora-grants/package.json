@@ -1,0 +1,53 @@
+{
+  "name": "braiora-grants",
+  "version": "0.1.0",
+  "description": "Grant program schema and fit scoring. Part of Braiora Grant Graph.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Braiora",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BratkovskyEvgeny/braiora-grant-graph.git"
+  },
+  "homepage": "https://braiora.com",
+  "bugs": {
+    "url": "https://github.com/BratkovskyEvgeny/braiora-grant-graph/issues"
+  },
+  "keywords": [
+    "grants",
+    "optimism",
+    "retro-funding",
+    "braiora"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

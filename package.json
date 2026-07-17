@@ -1,0 +1,25 @@
+{
+  "name": "braiora-grant-graph",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "collect:demo": "pnpm --filter @ogg/collectors run collect:demo",
+    "collect:optimism": "pnpm --filter @ogg/collectors run collect:optimism",
+    "export:release": "pnpm --filter @ogg/collectors run export:release",
+    "api:dev": "pnpm --filter @ogg/api run dev",
+    "score:demo": "pnpm --filter @ogg/score run demo",
+    "example:integrator": "pnpm --filter braiora-grants build && node examples/integrator-score.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsup": "^8.5.1",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.8"
+  }
+}

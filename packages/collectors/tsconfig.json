@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true
+  },
+  "references": [{ "path": "../schema" }, { "path": "../sdk" }],
+  "include": ["src/**/*"],
+  "exclude": [
+    "src/**/*.test.ts",
+    "src/demo-seed.ts",
+    "src/optimism/cli.ts",
+    "src/export-release.ts"
+  ]
+}

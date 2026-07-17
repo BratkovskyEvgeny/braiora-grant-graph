@@ -1,0 +1,13 @@
+{
+  "release_date": "2026-07-17",
+  "schema_version": "0.1.0",
+  "product": "braiora-grants",
+  "brand": "Braiora",
+  "primary_source": "optimism-retro-funding-github",
+  "counts": {
+    "programs": 6,
+    "awards": 458,
+    "opportunities": 4,
+    "awards_optimism": 457
+  }
+}

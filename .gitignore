@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+.turbo/
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+!.env.example
+*.duckdb
+*.duckdb.wal
+data/raw/**
+!data/raw/.gitkeep
+data/normalized/**
+!data/normalized/.gitkeep
+apps/radar/dist/
+*.log
